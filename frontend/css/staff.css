@@ -1,0 +1,103 @@
+/* =========================================
+   STAFF — LOGIN
+========================================= */
+
+.login-container { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 28px 20px calc(28px + var(--safe-bottom)); background: var(--bg-color); }
+.login-header { margin-bottom: 26px; text-align: center; }
+.login-header .restaurant-name { font-family: var(--font-display); font-size: 34px; }
+.login-ornament { margin-top: 10px; color: var(--gold); font-family: var(--font-display); font-size: 13px; letter-spacing: .4em; }
+.login-subtitle { margin-top: 8px; color: var(--text-secondary); font-size: 13px; text-transform: uppercase; letter-spacing: .13em; }
+.login-form { width: min(410px, 100%); padding: 28px; border: 1px solid var(--border-strong); border-top: 3px solid var(--gold); border-radius: var(--radius-md); background: var(--surface); box-shadow: var(--shadow-md); }
+.form-group { margin-bottom: 18px; }
+.form-label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+.form-input { width: 100%; min-height: 48px; padding: 12px 13px; border: 1px solid var(--border-strong); border-radius: 6px; outline: none; background: var(--surface); }
+.form-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
+.error-message { margin-bottom: 16px; padding: 11px 13px; border: 1px solid #e0b9b5; border-radius: 6px; background: #f8eceb; color: var(--danger); text-align: center; font-size: 13px; }
+.btn-login { margin-top: 4px; min-height: 52px; }
+
+/* =========================================
+   STAFF — DASHBOARD (POS console)
+========================================= */
+
+.dashboard-main { max-width: 720px; margin: 0 auto; padding: calc(14px + var(--safe-top)) 16px calc(40px + var(--safe-bottom)); }
+.dashboard-header { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-bottom: 16px; border-bottom: 1px solid var(--border-strong); }
+.header-left .restaurant-name { font-family: var(--font-display); font-size: 27px; }
+.user-info { margin-top: 5px; color: var(--text-secondary); font-size: 13px; }
+
+/* Today's Summary */
+.today-summary { display: flex; gap: 10px; padding: 16px 0 4px; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.today-summary::-webkit-scrollbar { display: none; }
+.summary-card { min-width: 108px; flex: 1; padding: 14px 12px; border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); text-align: center; box-shadow: var(--shadow-sm); }
+.summary-card.sales { border-color: #d7c3a0; background: var(--gold-light); }
+.summary-card.completed { border-color: #c5d6cc; background: #eef4f0; }
+.summary-label { margin-bottom: 6px; color: var(--text-secondary); font-size: 10px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.summary-value { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--text-primary); line-height: 1.1; }
+
+.dashboard-controls { margin: 18px 0 16px; display: flex; flex-direction: column; gap: 12px; }
+.filter-scroll { overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.filter-scroll::-webkit-scrollbar { display: none; }
+.filter-tabs { display: flex; gap: 7px; min-width: max-content; }
+.filter-tab { min-height: 44px; padding: 9px 13px; border: 1px solid var(--border-strong); border-radius: 6px; background: var(--surface); color: var(--text-secondary); font-size: 11px; font-weight: 700; letter-spacing: .03em; white-space: nowrap; }
+.filter-tab.active { border-color: var(--accent); background: #f8eceb; color: var(--text-primary); }
+.count-badge { margin-left: 5px; }
+.refresh-btn { min-height: 44px; }
+.dashboard-actions { display: flex; gap: 10px; align-self: flex-end; }
+
+.btn-sm { min-height: 38px; padding: 6px 14px; font-size: 12px; }
+
+.orders-container { display: flex; flex-direction: column; gap: 14px; }
+.order-card { padding: 16px; border: 1px solid var(--border-strong); border-left: 4px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); box-shadow: var(--shadow-sm); }
+.order-card.status-NEW { border-left-color: var(--warning); }
+.order-card.status-CONFIRMED { border-left-color: var(--info); }
+.order-card.status-COMPLETED { border-left-color: var(--success); }
+.order-card.status-CANCELLED { border-left-color: var(--danger); }
+.order-header { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.order-id { font-family: var(--font-display); font-size: 20px; font-weight: 700; }
+.order-table { padding: 6px 10px; border: 1px solid var(--border); border-radius: 5px; background: var(--surface-soft); font-size: 12px; font-weight: 700; white-space: nowrap; }
+.order-meta { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 8px 0 12px; color: var(--text-secondary); font-size: 12px; }
+.status-badge { padding: 5px 8px; border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+.status-NEW .status-badge { background: #f5ecdf; color: #795522; }
+.status-CONFIRMED .status-badge { background: #e9eef1; color: #4f6674; }
+.status-COMPLETED .status-badge { background: #e9f0eb; color: #356b58; }
+.status-CANCELLED .status-badge { background: #f6e9e7; color: #8d3a34; }
+.order-items { padding: 10px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.order-item-row { display: grid; grid-template-columns: 40px 1fr auto; gap: 8px; padding: 6px 0; font-size: 13px; }
+.order-item-qty { color: var(--text-secondary); font-weight: 600; }
+.order-item-name { min-width: 0; }
+.order-notes { margin: 12px 0; padding: 10px 12px; border-left: 3px solid var(--gold); background: var(--surface-soft); color: var(--text-secondary); font-size: 12px; line-height: 1.5; word-break: break-word; }
+.order-footer { display: flex; justify-content: flex-end; margin-top: 13px; }
+.order-total { font-size: 16px; font-weight: 700; }
+.order-actions { display: flex; gap: 8px; margin-top: 14px; }
+.btn-action { flex: 1; min-height: 46px; padding: 10px; border: 1px solid; border-radius: 5px; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.btn-confirm { border-color: var(--accent); background: var(--accent); color: #fff; }
+.btn-complete { border-color: var(--success); background: var(--success); color: #fff; }
+.btn-cancel { border-color: var(--danger); background: transparent; color: var(--danger); }
+.btn-action:disabled { opacity: .5; cursor: not-allowed; }
+
+/* History */
+.history-container h2 { font-family: var(--font-display); margin-bottom: 12px; }
+.history-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px; border: 1px solid var(--border); border-bottom: 0; background: var(--surface); cursor: pointer; }
+.history-row:last-child { border-bottom: 1px solid var(--border); }
+.history-row:hover { border-color: var(--accent); }
+.history-row strong { font-family: var(--font-display); font-size: 16px; }
+.history-row span { color: var(--text-secondary); font-size: 13px; }
+
+/* Dashboard Toast (generic status feedback) */
+.dashboard-toast { position: fixed; top: calc(14px + var(--safe-top)); right: 14px; left: auto; z-index: 1000; padding: 11px 16px; border: 1px solid var(--border-strong); border-radius: 6px; background: var(--text-primary); color: #fff; box-shadow: var(--shadow-lg); transform: translateX(130%); transition: transform .2s ease; font-size: 13px; }
+.dashboard-toast.show { transform: translateX(0); }
+
+@media (min-width: 700px) {
+    .dashboard-controls { flex-direction: row; align-items: center; justify-content: space-between; }
+    .filter-scroll { flex: 1; }
+    .dashboard-actions { align-self: center; }
+}
+
+@media (max-width: 650px) {
+    .dashboard-header { align-items: flex-start; }
+    .header-left .restaurant-name { font-size: 24px; }
+    .user-info { font-size: 12px; }
+    .order-actions { flex-direction: column; }
+    .order-card { padding: 14px; }
+    .summary-card { min-width: 96px; padding: 12px 10px; }
+    .summary-value { font-size: 19px; }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ffffff">
+    <title>Menu - Flavours Restaurant</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="header-content">
+            <h1 class="restaurant-name">Flavours Restaurant</h1>
+            <div class="table-indicator">
+                <span class="table-icon">🪑</span>
+                <span id="table-display">Table --</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Search for dishes..." autocomplete="off">
+        <span class="search-icon">🔍</span>
+    </div>
+
+    <nav class="category-nav" id="category-nav">
+        <div class="category-tabs" id="category-tabs"></div>
+    </nav>
+
+    <main class="menu-container" id="menu-container">
+        <div id="invalid-table-state" class="state-message hidden">
+            <p style="font-size: 48px; margin-bottom: 16px;">🚫</p>
+            <h2 style="font-size: 20px; margin-bottom: 8px; color: var(--text-primary);">Invalid Table</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 24px; line-height: 1.5;">Please scan the QR code provided at your table.</p>
+        </div>
+
+        <div id="loading-state" class="state-message">
+            <div class="spinner"></div>
+            <p>Loading today's menu...</p>
+        </div>
+
+        <div id="error-state" class="state-message hidden">
+            <p class="error-text">⚠️ Failed to load menu.</p>
+            <button class="btn-primary" onclick="location.reload()" style="max-width: 200px; margin: 0 auto;">Try Again</button>
+        </div>
+
+        <div id="menu-content" class="hidden"></div>
+    </main>
+
+    <div id="cart-bar" class="cart-bar hidden">
+        <div class="cart-info">
+            <span class="cart-count" id="cart-count">0 items</span>
+            <span class="cart-total" id="cart-total">₹0</span>
+        </div>
+        <button class="btn-cart" id="view-cart-btn">VIEW CART</button>
+    </div>
+
+    <div id="item-modal" class="modal hidden">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">✕</button>
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="Food" class="modal-image">
+            </div>
+            <div class="modal-body">
+                <div class="modal-header-row">
+                    <h2 id="modal-name" class="modal-title">Item Name</h2>
+                    <span id="modal-veg-indicator" class="veg-indicator"></span>
+                </div>
+                <p id="modal-description" class="modal-description">Description goes here.</p>
+                <p id="modal-ingredients" class="modal-ingredients hidden"><strong>Ingredients:</strong> <span></span></p>
+                <div class="modal-footer">
+                    <div class="modal-price" id="modal-price">₹0</div>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" id="qty-decrease">−</button>
+                        <span class="qty-display" id="qty-display">1</span>
+                        <button class="qty-btn" id="qty-increase">+</button>
+                    </div>
+                    <button class="btn-primary btn-add-modal" id="modal-add-btn">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="js/api.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

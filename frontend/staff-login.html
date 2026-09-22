@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f1ea">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Staff Login - Flavours Restaurant</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/staff.css">
+</head>
+<body>
+    <main class="login-container">
+        <div class="login-header">
+            <h1 class="restaurant-name">Flavours Restaurant</h1>
+            <p class="login-ornament" aria-hidden="true">✦ ✦ ✦</p>
+            <p class="login-subtitle">Staff Login</p>
+        </div>
+
+        <form id="login-form" class="login-form">
+            <div class="form-group">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username" class="form-input" autocomplete="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-input" autocomplete="current-password" required>
+            </div>
+
+            <div id="error-message" class="error-message hidden"></div>
+
+            <button type="submit" id="login-btn" class="btn-primary btn-login">
+                LOGIN
+            </button>
+        </form>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/staff-login.js"></script>
+</body>
+</html>

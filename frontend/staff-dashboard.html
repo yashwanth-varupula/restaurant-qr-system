@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f1ea">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Staff Dashboard - Flavours Restaurant</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/staff.css">
+</head>
+<body>
+    <!-- Loading State -->
+    <main id="dashboard-loading" class="state-message">
+        <div class="spinner"></div>
+        <p>Loading dashboard...</p>
+    </main>
+
+    <!-- Dashboard Content -->
+    <main id="dashboard-content" class="dashboard-main hidden">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1 class="restaurant-name">Flavours Restaurant</h1>
+                <p class="user-info">Logged in as: <strong id="staff-username">...</strong></p>
+            </div>
+            <button id="logout-btn" class="btn-secondary btn-sm">LOGOUT</button>
+        </header>
+
+        <!-- Today's Summary -->
+        <section id="today-summary" class="today-summary">
+            <div class="summary-card">
+                <div class="summary-label">Orders Today</div>
+                <div class="summary-value" id="sum-orders">0</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-label">Sales Today</div>
+                <div class="summary-value" id="sum-sales">₹0</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-label">Pending</div>
+                <div class="summary-value" id="sum-pending">0</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-label">Active</div>
+                <div class="summary-value" id="sum-active">0</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-label">Completed</div>
+                <div class="summary-value" id="sum-completed">0</div>
+            </div>
+        </section>
+
+        <!-- Controls -->
+        <div class="dashboard-controls">
+            <div class="filter-scroll">
+                <div class="filter-tabs" id="filter-tabs">
+                    <button class="filter-tab active" data-status="NEW">NEW <span class="count-badge" id="count-new">0</span></button>
+                    <button class="filter-tab" data-status="CONFIRMED">CONFIRMED <span class="count-badge" id="count-confirmed">0</span></button>
+                    <button class="filter-tab" data-status="COMPLETED">COMPLETED <span class="count-badge" id="count-completed">0</span></button>
+                    <button class="filter-tab" data-status="CANCELLED">CANCELLED <span class="count-badge" id="count-cancelled">0</span></button>
+                    <button class="filter-tab" data-status="ALL">ALL</button>
+                    <button class="filter-tab" data-status="HISTORY">HISTORY</button>
+                </div>
+            </div>
+            <div class="dashboard-actions">
+                <button id="refresh-btn" class="btn-secondary btn-sm refresh-btn">↻ Refresh</button>
+            </div>
+        </div>
+
+        <!-- Orders Container -->
+        <div id="orders-container" class="orders-container"></div>
+
+        <!-- History Container -->
+        <div id="history-container" class="orders-container history-container hidden"></div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="state-message hidden">
+            <p style="font-size: 48px; margin-bottom: 16px;">📋</p>
+            <h3 id="empty-state-title">No new orders</h3>
+            <p style="color: var(--text-secondary);">New customer orders will appear here.</p>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/staff-dashboard.js"></script>
+</body>
+</html>

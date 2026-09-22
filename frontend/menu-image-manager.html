@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f0e8">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <title>Menu Images - Flavours Restaurant</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/menu-image-manager.css">
+</head>
+
+<body>
+
+    <main class="image-manager">
+
+        <!-- Header -->
+        <header class="manager-header">
+            <div>
+                <a href="/staff-dashboard.html" class="back-link">
+                    ← Staff Dashboard
+                </a>
+
+                <h1>Menu Images</h1>
+                <p>Manage food images displayed on the customer menu.</p>
+            </div>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <span>Total Items</span>
+                <strong id="totalItems">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Images Assigned</span>
+                <strong id="uploadedItems">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Images Missing</span>
+                <strong id="missingItems">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Progress</span>
+                <strong id="progressText">0 / 222</strong>
+            </div>
+
+        </section>
+
+
+        <!-- Filters -->
+        <section class="filters">
+
+            <div class="search-wrapper">
+                <label for="searchInput">Search menu</label>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search food item..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="filter-wrapper">
+                <label for="categoryFilter">Category</label>
+
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+
+            <div class="filter-wrapper">
+                <label for="imageFilter">Images</label>
+
+                <select id="imageFilter">
+                    <option value="">All Items</option>
+                    <option value="missing">Images Missing</option>
+                    <option value="assigned">Images Assigned</option>
+                </select>
+            </div>
+
+        </section>
+
+
+        <!-- Bulk assistance toolbar -->
+        <section class="manager-toolbar">
+
+            <button
+                type="button"
+                id="nextMissingBtn"
+                class="toolbar-btn"
+            >
+                Next Missing Item
+            </button>
+
+            <p class="toolbar-hint">
+                Use <strong>Search Pexels</strong> on a dish to review and assign real food photos. Wrong images are worse than no image.
+            </p>
+
+        </section>
+
+
+        <!-- Loading -->
+        <div id="loadingState" class="state-message">
+            Loading menu items...
+        </div>
+
+
+        <!-- Error -->
+        <div id="errorState" class="state-message error-state hidden">
+            <strong>Something went wrong.</strong>
+            <span id="errorMessage"></span>
+            <button id="retryBtn">Try Again</button>
+        </div>
+
+
+        <!-- Menu items -->
+        <section id="itemsGrid" class="items-grid"></section>
+
+
+        <!-- Empty -->
+        <div id="emptyState" class="state-message hidden">
+            No menu items found.
+        </div>
+
+    </main>
+
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="modal hidden">
+
+        <div class="modal-backdrop"></div>
+
+        <div class="modal-content">
+
+            <button
+                type="button"
+                id="closeModalBtn"
+                class="modal-close"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <p class="modal-eyebrow">MENU IMAGE</p>
+
+            <h2 id="modalItemName">Upload Image</h2>
+
+            <p class="modal-category" id="modalCategory"></p>
+
+
+            <!-- Preview -->
+            <div id="imagePreviewWrapper" class="image-preview-wrapper hidden">
+                <img id="imagePreview" alt="Image preview">
+            </div>
+
+
+            <!-- File -->
+            <label class="file-picker">
+
+                <span>Select Image</span>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    accept="image/jpeg,image/png,image/webp"
+                >
+
+            </label>
+
+            <p class="file-help">
+                JPG, PNG or WebP · Maximum 10 MB
+            </p>
+
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    id="cancelUploadBtn"
+                    class="secondary-btn"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="button"
+                    id="uploadBtn"
+                    class="primary-btn"
+                >
+                    Upload Image
+                </button>
+
+            </div>
+
+            <p id="uploadStatus" class="upload-status"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Pexels Search Modal -->
+    <div id="pexelsModal" class="modal hidden">
+
+        <div class="modal-backdrop"></div>
+
+        <div class="modal-content pexels-modal">
+
+            <button
+                type="button"
+                id="closePexelsModalBtn"
+                class="modal-close"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+            <p class="modal-eyebrow">PEXELS SEARCH</p>
+
+            <h2 id="pexelsItemName">Search Images</h2>
+
+            <p class="modal-category" id="pexelsItemCategory"></p>
+
+
+            <!-- Current image -->
+            <span class="pexels-block-label">Current image</span>
+            <div id="pexelsCurrentImage" class="pexels-current-frame"></div>
+
+
+            <!-- Query controls -->
+            <div class="pexels-query-row">
+
+                <input
+                    type="search"
+                    id="pexelsQuery"
+                    placeholder="Search food image..."
+                    autocomplete="off"
+                >
+
+                <button
+                    type="button"
+                    id="pexelsSearchBtn"
+                    class="primary-btn"
+                >
+                    Search
+                </button>
+
+                <button
+                    type="button"
+                    id="pexelsSuggestBtn"
+                    class="suggest-btn"
+                    title="Auto-build a query from this dish and search"
+                >
+                    Suggest
+                </button>
+
+            </div>
+
+            <p class="pexels-query-note" id="pexelsQueryNote"></p>
+
+
+            <!-- Selected candidate -->
+            <div class="pexels-selected">
+                <span class="pexels-block-label">Selected image</span>
+
+                <div class="pexels-selected-row">
+
+                    <div id="pexelsSelectedImage" class="pexels-selected-frame"></div>
+
+                    <div class="pexels-selected-actions">
+                        <button
+                            type="button"
+                            id="pexelsSaveBtn"
+                            class="primary-btn"
+                            disabled
+                        >
+                            Save Image
+                        </button>
+
+                        <button
+                            type="button"
+                            id="pexelsClearBtn"
+                            class="secondary-btn"
+                        >
+                            Clear
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <p id="pexelsStatus" class="upload-status"></p>
+
+
+            <!-- Results -->
+            <div id="pexelsResults" class="pexels-results"></div>
+
+            <div id="pexelsNoResults" class="pexels-no-results hidden">
+                <strong>No suitable image found</strong>
+                <span>
+                    None of the returned photos clearly matched this dish.
+                    Try a different search term, or skip this item and come back later.
+                </span>
+            </div>
+
+            <p class="pexels-attribution">
+                Photos provided by
+                <a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">
+                    Pexels
+                </a>.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="/js/api.js"></script>
+    <script src="/js/menu-image-manager.js"></script>
+
+</body>
+</html>

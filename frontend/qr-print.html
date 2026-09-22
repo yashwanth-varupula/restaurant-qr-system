@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Print QR Codes - Flavours Restaurant</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/qr-print.css">
+</head>
+<body>
+    <main class="qr-print-container">
+        <header class="print-header">
+            <h1>Table QR Codes</h1>
+            <button id="print-btn" class="btn-print">🖨️ Print All</button>
+        </header>
+
+        <div id="loading-state" class="state-message">
+            <div class="spinner"></div>
+            <p>Loading tables...</p>
+        </div>
+
+        <div id="error-state" class="state-message hidden" style="color: var(--primary-color); font-weight: 600;"></div>
+
+        <div id="qr-grid" class="qr-grid">
+            <!-- QR Cards injected here -->
+        </div>
+    </main>
+
+    <script src="js/qr-print.js"></script>
+</body>
+</html>

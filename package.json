@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-qr-system",
+  "version": "1.0.0",
+  "description": "Mobile-first Restaurant QR Ordering System",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "generate:qr": "node scripts/generate-qr.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.4.0",
+    "mysql2": "^3.6.5",
+    "qrcode": "^1.5.3",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

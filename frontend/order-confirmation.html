@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#f5f1ea">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Order Confirmed - Flavours Restaurant</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/order-confirmation.css">
+</head>
+<body>
+    <main id="invalid-order-state" class="state-message hidden">
+        <p class="state-mark" aria-hidden="true">—</p>
+        <h2>Order not found</h2>
+        <p>Please return to the menu and place the order again.</p>
+        <a href="#" id="invalid-back-menu" class="btn-primary" style="max-width:250px;text-decoration:none;margin-top:20px;">BACK TO MENU</a>
+    </main>
+
+    <main id="loading-state" class="state-message">
+        <div class="spinner"></div>
+        <p>Fetching your order details...</p>
+    </main>
+
+    <main id="error-state" class="state-message hidden">
+        <p class="error-text">Unable to load your order.</p>
+        <p>Please check your connection and try again.</p>
+        <button id="retry-order-btn" class="btn-primary" type="button" style="max-width:200px;margin:20px auto 0;">TRY AGAIN</button>
+    </main>
+
+    <main id="success-content" class="confirmation-main hidden">
+        <div class="confirmation-brand">Flavours Restaurant</div>
+
+        <div class="success-icon-container" aria-hidden="true">
+            <svg class="success-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" fill="#356b58"/>
+                <path d="M7.5 12.2L10.6 15.2L16.5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <h1 class="success-title">Order placed successfully</h1>
+        <p class="success-subtitle">Thank you. Your order has been received and our staff will confirm it shortly.</p>
+        <p class="friendly-message">While you wait, feel free to explore the menu for more dishes.</p>
+
+        <div class="order-details-card">
+            <div class="detail-row"><span class="detail-label">Order Number</span><span class="detail-value" id="order-id">#--</span></div>
+            <div class="detail-row"><span class="detail-label">Table</span><span class="detail-value" id="table-number">--</span></div>
+            <div class="detail-row"><span class="detail-label">Status</span><span class="status-badge" id="order-status">Order Received</span></div>
+        </div>
+
+        <div class="order-summary-card">
+            <h2 class="summary-title">Order Summary</h2>
+            <div id="order-items-container" class="order-items-container"></div>
+            <div class="summary-total-row"><span>Total Amount</span><span class="total-amount" id="order-total">₹0</span></div>
+        </div>
+
+        <div class="confirmation-actions">
+            <a href="#" id="back-to-menu-btn" class="btn-primary" style="text-decoration:none;">BACK TO MENU</a>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/order-confirmation.js"></script>
+</body>
+</html>
