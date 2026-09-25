@@ -123,17 +123,22 @@ app.use('/api/image-manager', imageManagerRoutes);
 // =========================================
 
 app.use((err, req, res, next) => {
-    console.error('Global Error:', err.message);
+    console.error('GLOBAL_ERROR_DETAILS:', JSON.stringify({
+        message: err.message,
+        code: err.code,
+        errno: err.errno,
+        sqlState: err.sqlState,
+        sqlMessage: err.sqlMessage,
+        stack: err.stack
+    }));
 
+    // Don't leak internal error details in production
     const message = process.env.NODE_ENV === 'production'
-        ? 'Internal server error'
+        ? 'Internal Server Error'
         : err.message;
 
-    res.status(err.status || 500).json({
-        error: message
-    });
+    res.status(err.status || 500).json({ error: message });
 });
-
 // =========================================
 // 8. START SERVER
 // =========================================
