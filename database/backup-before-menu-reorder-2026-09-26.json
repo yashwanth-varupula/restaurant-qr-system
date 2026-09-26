@@ -1,0 +1,1700 @@
+{
+  "note": "Pre-change snapshot of menu ordering columns. Restore with scripts/reorder-menu-order-2026-09-26.sql (rollback section) or the JSON values here.",
+  "captured_at": "2026-09-26T11:45:24.271Z",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Starters",
+      "display_order": 1,
+      "is_active": 0
+    },
+    {
+      "id": 2,
+      "name": "Main Course",
+      "display_order": 2,
+      "is_active": 0
+    },
+    {
+      "id": 3,
+      "name": "Beverages",
+      "display_order": 3,
+      "is_active": 0
+    },
+    {
+      "id": 4,
+      "name": "Indian Veg Curries",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 5,
+      "name": "Indian Non-Veg Curries",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 6,
+      "name": "Egg Starters",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 7,
+      "name": "Tandoori - Veg / Non Veg",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 8,
+      "name": "Veg - North Indian Curries",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 9,
+      "name": "Indian Bread",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 10,
+      "name": "Rice",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 11,
+      "name": "Biryani's",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 12,
+      "name": "Veg-Soups",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 13,
+      "name": "Non Veg Soups",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 14,
+      "name": "Veg - Starters",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 15,
+      "name": "Non-Veg Starters",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 16,
+      "name": "Andhra Specialities",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 17,
+      "name": "Salads",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 18,
+      "name": "Raitas",
+      "display_order": 1,
+      "is_active": 1
+    },
+    {
+      "id": 24,
+      "name": "Chinese Noodles",
+      "display_order": 4,
+      "is_active": 1
+    },
+    {
+      "id": 25,
+      "name": "Chinese Fried Rice",
+      "display_order": 5,
+      "is_active": 1
+    },
+    {
+      "id": 26,
+      "name": "Chinese Veg Wet",
+      "display_order": 6,
+      "is_active": 1
+    },
+    {
+      "id": 27,
+      "name": "Chinese Non-Veg Wet",
+      "display_order": 7,
+      "is_active": 1
+    },
+    {
+      "id": 28,
+      "name": "South Indian",
+      "display_order": 8,
+      "is_active": 1
+    }
+  ],
+  "menu_items": [
+    {
+      "id": 7,
+      "category_id": 4,
+      "name": "Corn Palak",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 8,
+      "category_id": 4,
+      "name": "Palak Paneer",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 9,
+      "category_id": 4,
+      "name": "Kadai Paneer",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 10,
+      "category_id": 4,
+      "name": "Paneer Chat Pata",
+      "display_order": 4,
+      "is_veg": 1
+    },
+    {
+      "id": 11,
+      "category_id": 4,
+      "name": "Paneer Kolhapuri",
+      "display_order": 5,
+      "is_veg": 1
+    },
+    {
+      "id": 12,
+      "category_id": 4,
+      "name": "Paneer Butter Masala",
+      "display_order": 6,
+      "is_veg": 1
+    },
+    {
+      "id": 13,
+      "category_id": 4,
+      "name": "Methi Paneer",
+      "display_order": 7,
+      "is_veg": 1
+    },
+    {
+      "id": 14,
+      "category_id": 4,
+      "name": "Mutter Paneer",
+      "display_order": 8,
+      "is_veg": 1
+    },
+    {
+      "id": 15,
+      "category_id": 4,
+      "name": "Methi Chaman Bahar",
+      "display_order": 9,
+      "is_veg": 1
+    },
+    {
+      "id": 16,
+      "category_id": 4,
+      "name": "Kaju Paneer Curry",
+      "display_order": 10,
+      "is_veg": 1
+    },
+    {
+      "id": 17,
+      "category_id": 4,
+      "name": "Malai Kofta Curry",
+      "display_order": 11,
+      "is_veg": 1
+    },
+    {
+      "id": 18,
+      "category_id": 4,
+      "name": "Kaju Curry",
+      "display_order": 12,
+      "is_veg": 1
+    },
+    {
+      "id": 19,
+      "category_id": 5,
+      "name": "Egg Curry",
+      "display_order": 1,
+      "is_veg": 0
+    },
+    {
+      "id": 20,
+      "category_id": 5,
+      "name": "Chicken Bone Curry/Fry",
+      "display_order": 2,
+      "is_veg": 0
+    },
+    {
+      "id": 21,
+      "category_id": 5,
+      "name": "Chicken Boneless Curry/Fry",
+      "display_order": 3,
+      "is_veg": 0
+    },
+    {
+      "id": 22,
+      "category_id": 5,
+      "name": "Kadai Chicken",
+      "display_order": 4,
+      "is_veg": 0
+    },
+    {
+      "id": 23,
+      "category_id": 5,
+      "name": "Butter Chicken",
+      "display_order": 5,
+      "is_veg": 0
+    },
+    {
+      "id": 24,
+      "category_id": 5,
+      "name": "Methi Chicken",
+      "display_order": 6,
+      "is_veg": 0
+    },
+    {
+      "id": 25,
+      "category_id": 5,
+      "name": "Chicken Chettinad",
+      "display_order": 7,
+      "is_veg": 0
+    },
+    {
+      "id": 26,
+      "category_id": 5,
+      "name": "Chicken Tikka Masala",
+      "display_order": 8,
+      "is_veg": 0
+    },
+    {
+      "id": 27,
+      "category_id": 5,
+      "name": "Chicken Maharani",
+      "display_order": 9,
+      "is_veg": 0
+    },
+    {
+      "id": 28,
+      "category_id": 5,
+      "name": "Mughlai Chicken",
+      "display_order": 10,
+      "is_veg": 0
+    },
+    {
+      "id": 29,
+      "category_id": 5,
+      "name": "Chicken Keema Curry",
+      "display_order": 11,
+      "is_veg": 0
+    },
+    {
+      "id": 30,
+      "category_id": 5,
+      "name": "Chicken Kolhapuri Curry",
+      "display_order": 12,
+      "is_veg": 0
+    },
+    {
+      "id": 31,
+      "category_id": 5,
+      "name": "Kaju Chicken Curry",
+      "display_order": 13,
+      "is_veg": 0
+    },
+    {
+      "id": 32,
+      "category_id": 5,
+      "name": "Chicken Afghani",
+      "display_order": 14,
+      "is_veg": 0
+    },
+    {
+      "id": 33,
+      "category_id": 5,
+      "name": "Chef Spl Chicken Curry",
+      "display_order": 15,
+      "is_veg": 0
+    },
+    {
+      "id": 34,
+      "category_id": 5,
+      "name": "Kadai Mutton (Bone) Curry",
+      "display_order": 16,
+      "is_veg": 0
+    },
+    {
+      "id": 35,
+      "category_id": 5,
+      "name": "Mutton Curry (Bone)",
+      "display_order": 17,
+      "is_veg": 0
+    },
+    {
+      "id": 36,
+      "category_id": 5,
+      "name": "Mutton Fry (Bone)",
+      "display_order": 18,
+      "is_veg": 0
+    },
+    {
+      "id": 37,
+      "category_id": 5,
+      "name": "Chef Spl Mutton Curry",
+      "display_order": 19,
+      "is_veg": 0
+    },
+    {
+      "id": 38,
+      "category_id": 5,
+      "name": "Prawn Curry",
+      "display_order": 20,
+      "is_veg": 0
+    },
+    {
+      "id": 39,
+      "category_id": 5,
+      "name": "Prawn Fry",
+      "display_order": 21,
+      "is_veg": 0
+    },
+    {
+      "id": 40,
+      "category_id": 5,
+      "name": "Kadai Prawn Curry",
+      "display_order": 22,
+      "is_veg": 0
+    },
+    {
+      "id": 41,
+      "category_id": 6,
+      "name": "Boiled Egg",
+      "display_order": 1,
+      "is_veg": 0
+    },
+    {
+      "id": 42,
+      "category_id": 6,
+      "name": "Egg Bhurji",
+      "display_order": 2,
+      "is_veg": 0
+    },
+    {
+      "id": 43,
+      "category_id": 6,
+      "name": "Egg (Chilly/65/Manchurian)",
+      "display_order": 3,
+      "is_veg": 0
+    },
+    {
+      "id": 44,
+      "category_id": 6,
+      "name": "Egg Spring Rolls",
+      "display_order": 4,
+      "is_veg": 0
+    },
+    {
+      "id": 45,
+      "category_id": 7,
+      "name": "Roasted Papad",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 46,
+      "category_id": 7,
+      "name": "Masala Papad",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 47,
+      "category_id": 7,
+      "name": "Paneer Tikka",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 48,
+      "category_id": 7,
+      "name": "Chicken Tikka",
+      "display_order": 4,
+      "is_veg": 0
+    },
+    {
+      "id": 49,
+      "category_id": 7,
+      "name": "Kaju Kabab",
+      "display_order": 5,
+      "is_veg": 1
+    },
+    {
+      "id": 50,
+      "category_id": 7,
+      "name": "Tangidi Kabab",
+      "display_order": 6,
+      "is_veg": 0
+    },
+    {
+      "id": 51,
+      "category_id": 7,
+      "name": "Tandoori Chicken Half",
+      "display_order": 7,
+      "is_veg": 0
+    },
+    {
+      "id": 52,
+      "category_id": 7,
+      "name": "Tandoori Chicken Full",
+      "display_order": 8,
+      "is_veg": 0
+    },
+    {
+      "id": 53,
+      "category_id": 8,
+      "name": "Green Peas Curry",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 54,
+      "category_id": 8,
+      "name": "Plain Palak",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 55,
+      "category_id": 8,
+      "name": "Alu Palak",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 56,
+      "category_id": 8,
+      "name": "Tomato Curry",
+      "display_order": 4,
+      "is_veg": 1
+    },
+    {
+      "id": 57,
+      "category_id": 8,
+      "name": "Mixed Vegetable Curry",
+      "display_order": 5,
+      "is_veg": 1
+    },
+    {
+      "id": 58,
+      "category_id": 8,
+      "name": "Kadai Vegetable Curry",
+      "display_order": 6,
+      "is_veg": 1
+    },
+    {
+      "id": 59,
+      "category_id": 8,
+      "name": "Capsicum Curry",
+      "display_order": 7,
+      "is_veg": 1
+    },
+    {
+      "id": 60,
+      "category_id": 8,
+      "name": "Veg Maharani",
+      "display_order": 8,
+      "is_veg": 1
+    },
+    {
+      "id": 61,
+      "category_id": 8,
+      "name": "Veg Chettinad",
+      "display_order": 9,
+      "is_veg": 1
+    },
+    {
+      "id": 62,
+      "category_id": 8,
+      "name": "Veg Do Pyaza",
+      "display_order": 10,
+      "is_veg": 1
+    },
+    {
+      "id": 63,
+      "category_id": 8,
+      "name": "Alu Mutter",
+      "display_order": 11,
+      "is_veg": 1
+    },
+    {
+      "id": 64,
+      "category_id": 8,
+      "name": "Veg Keema Curry",
+      "display_order": 12,
+      "is_veg": 1
+    },
+    {
+      "id": 65,
+      "category_id": 8,
+      "name": "Veg Chat Pat Curry",
+      "display_order": 13,
+      "is_veg": 1
+    },
+    {
+      "id": 66,
+      "category_id": 8,
+      "name": "Veg Jai Puri",
+      "display_order": 14,
+      "is_veg": 1
+    },
+    {
+      "id": 67,
+      "category_id": 8,
+      "name": "Veg Kolhapuri",
+      "display_order": 15,
+      "is_veg": 1
+    },
+    {
+      "id": 68,
+      "category_id": 8,
+      "name": "Kaju Tomato Curry",
+      "display_order": 16,
+      "is_veg": 1
+    },
+    {
+      "id": 69,
+      "category_id": 8,
+      "name": "Kaju Capsicum Curry",
+      "display_order": 17,
+      "is_veg": 1
+    },
+    {
+      "id": 70,
+      "category_id": 8,
+      "name": "Baby Corn Curry (Half)",
+      "display_order": 18,
+      "is_veg": 1
+    },
+    {
+      "id": 71,
+      "category_id": 8,
+      "name": "Baby Corn Curry (Full)",
+      "display_order": 19,
+      "is_veg": 1
+    },
+    {
+      "id": 72,
+      "category_id": 8,
+      "name": "Mushroom Curry/Fry",
+      "display_order": 20,
+      "is_veg": 1
+    },
+    {
+      "id": 73,
+      "category_id": 8,
+      "name": "Kaju Mushroom Curry",
+      "display_order": 21,
+      "is_veg": 1
+    },
+    {
+      "id": 74,
+      "category_id": 8,
+      "name": "Kadai Mushroom Curry",
+      "display_order": 22,
+      "is_veg": 1
+    },
+    {
+      "id": 75,
+      "category_id": 9,
+      "name": "Pulka",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 76,
+      "category_id": 9,
+      "name": "Butter Pulka",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 77,
+      "category_id": 9,
+      "name": "Roti",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 78,
+      "category_id": 9,
+      "name": "Butter Roti",
+      "display_order": 4,
+      "is_veg": 1
+    },
+    {
+      "id": 79,
+      "category_id": 9,
+      "name": "Naan",
+      "display_order": 5,
+      "is_veg": 1
+    },
+    {
+      "id": 80,
+      "category_id": 9,
+      "name": "Butter Naan",
+      "display_order": 6,
+      "is_veg": 1
+    },
+    {
+      "id": 81,
+      "category_id": 9,
+      "name": "Garlic Naan",
+      "display_order": 7,
+      "is_veg": 1
+    },
+    {
+      "id": 82,
+      "category_id": 9,
+      "name": "Lacha Parota",
+      "display_order": 8,
+      "is_veg": 1
+    },
+    {
+      "id": 83,
+      "category_id": 9,
+      "name": "Methi Parota",
+      "display_order": 9,
+      "is_veg": 1
+    },
+    {
+      "id": 84,
+      "category_id": 9,
+      "name": "Pudhina Parota",
+      "display_order": 10,
+      "is_veg": 1
+    },
+    {
+      "id": 85,
+      "category_id": 9,
+      "name": "Alu Parota",
+      "display_order": 11,
+      "is_veg": 1
+    },
+    {
+      "id": 86,
+      "category_id": 9,
+      "name": "Paneer Parota",
+      "display_order": 12,
+      "is_veg": 1
+    },
+    {
+      "id": 87,
+      "category_id": 9,
+      "name": "Stuffed Parota",
+      "display_order": 13,
+      "is_veg": 1
+    },
+    {
+      "id": 88,
+      "category_id": 9,
+      "name": "Plain Kulcha",
+      "display_order": 14,
+      "is_veg": 1
+    },
+    {
+      "id": 89,
+      "category_id": 9,
+      "name": "Stuffed Kulcha",
+      "display_order": 15,
+      "is_veg": 1
+    },
+    {
+      "id": 90,
+      "category_id": 9,
+      "name": "Masala Kulcha",
+      "display_order": 16,
+      "is_veg": 1
+    },
+    {
+      "id": 91,
+      "category_id": 9,
+      "name": "Paneer Kulcha",
+      "display_order": 17,
+      "is_veg": 1
+    },
+    {
+      "id": 92,
+      "category_id": 10,
+      "name": "Ualavacharu",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 93,
+      "category_id": 10,
+      "name": "Curd Rice",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 94,
+      "category_id": 10,
+      "name": "Sp. Curd Rice",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 239,
+      "category_id": 11,
+      "name": "Chicken Dum Biryani Family Pak",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 230,
+      "category_id": 11,
+      "name": "Chicken Pot Biryani",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 236,
+      "category_id": 11,
+      "name": "Fish Biryani",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 229,
+      "category_id": 11,
+      "name": "Flavours Spl. Chicken Biryani",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 234,
+      "category_id": 11,
+      "name": "Gongura Prawn Biryani",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 237,
+      "category_id": 11,
+      "name": "Mixed Non-veg Biryani",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 240,
+      "category_id": 11,
+      "name": "Mutton Biryani Family Pak",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 231,
+      "category_id": 11,
+      "name": "Mutton Dum Biryani (Sunday Only)",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 232,
+      "category_id": 11,
+      "name": "Mutton Ulavacharu Biryani",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 235,
+      "category_id": 11,
+      "name": "Prawn Pot Biryani",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 241,
+      "category_id": 11,
+      "name": "Prawns Biryani Family Pak",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 233,
+      "category_id": 11,
+      "name": "Spl Prawn Biryani",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 238,
+      "category_id": 11,
+      "name": "Veg Biryani Family Pak",
+      "display_order": 0,
+      "is_veg": 1
+    },
+    {
+      "id": 95,
+      "category_id": 11,
+      "name": "Biryani Rice",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 96,
+      "category_id": 11,
+      "name": "Veg Biryani",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 97,
+      "category_id": 11,
+      "name": "Spl. Veg Biryani",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 98,
+      "category_id": 11,
+      "name": "Ulavacharu Veg Biryani",
+      "display_order": 4,
+      "is_veg": 1
+    },
+    {
+      "id": 99,
+      "category_id": 11,
+      "name": "Mushroom Veg Biryani",
+      "display_order": 5,
+      "is_veg": 1
+    },
+    {
+      "id": 100,
+      "category_id": 11,
+      "name": "Paneer Veg Biriyani",
+      "display_order": 6,
+      "is_veg": 1
+    },
+    {
+      "id": 101,
+      "category_id": 11,
+      "name": "Mixed Veg Biriyani",
+      "display_order": 7,
+      "is_veg": 1
+    },
+    {
+      "id": 102,
+      "category_id": 11,
+      "name": "Kaju Veg Biryani",
+      "display_order": 8,
+      "is_veg": 1
+    },
+    {
+      "id": 103,
+      "category_id": 11,
+      "name": "Egg Biryani",
+      "display_order": 9,
+      "is_veg": 0
+    },
+    {
+      "id": 104,
+      "category_id": 11,
+      "name": "Ulavacharu Egg Biryani",
+      "display_order": 10,
+      "is_veg": 0
+    },
+    {
+      "id": 105,
+      "category_id": 11,
+      "name": "Chicken Dum Biryani",
+      "display_order": 11,
+      "is_veg": 0
+    },
+    {
+      "id": 106,
+      "category_id": 11,
+      "name": "Chicken Fry Biryani",
+      "display_order": 12,
+      "is_veg": 0
+    },
+    {
+      "id": 107,
+      "category_id": 11,
+      "name": "Spl Chicken Biryani",
+      "display_order": 13,
+      "is_veg": 0
+    },
+    {
+      "id": 108,
+      "category_id": 11,
+      "name": "Chicken Mogalai Biryani",
+      "display_order": 14,
+      "is_veg": 0
+    },
+    {
+      "id": 109,
+      "category_id": 11,
+      "name": "Chicken Wings Biryani",
+      "display_order": 15,
+      "is_veg": 0
+    },
+    {
+      "id": 110,
+      "category_id": 11,
+      "name": "Chicken Tikka Biryani",
+      "display_order": 16,
+      "is_veg": 0
+    },
+    {
+      "id": 111,
+      "category_id": 11,
+      "name": "Tandoori Chicken Biryani",
+      "display_order": 17,
+      "is_veg": 0
+    },
+    {
+      "id": 112,
+      "category_id": 11,
+      "name": "Chicken Keema Biryani",
+      "display_order": 18,
+      "is_veg": 0
+    },
+    {
+      "id": 113,
+      "category_id": 11,
+      "name": "Chicken Ulavacharu Biryani",
+      "display_order": 19,
+      "is_veg": 0
+    },
+    {
+      "id": 114,
+      "category_id": 11,
+      "name": "Egg Brown Chicken Biryani",
+      "display_order": 20,
+      "is_veg": 0
+    },
+    {
+      "id": 115,
+      "category_id": 11,
+      "name": "Tangidi Chicken Biryani",
+      "display_order": 21,
+      "is_veg": 0
+    },
+    {
+      "id": 116,
+      "category_id": 11,
+      "name": "Gongura Chicken Biryani Bone",
+      "display_order": 22,
+      "is_veg": 0
+    },
+    {
+      "id": 117,
+      "category_id": 11,
+      "name": "Gongura Chicken Biryani Boneless",
+      "display_order": 23,
+      "is_veg": 0
+    },
+    {
+      "id": 118,
+      "category_id": 12,
+      "name": "Tomato Soup",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 119,
+      "category_id": 12,
+      "name": "Veg Corn Soup",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 120,
+      "category_id": 12,
+      "name": "Veg Manchow Soup",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 121,
+      "category_id": 12,
+      "name": "Veg Hot & Sour Soup",
+      "display_order": 4,
+      "is_veg": 1
+    },
+    {
+      "id": 122,
+      "category_id": 12,
+      "name": "Veg Clear Soup",
+      "display_order": 5,
+      "is_veg": 1
+    },
+    {
+      "id": 123,
+      "category_id": 12,
+      "name": "Veg Noodles Soup",
+      "display_order": 6,
+      "is_veg": 1
+    },
+    {
+      "id": 124,
+      "category_id": 12,
+      "name": "Veg Lemon Coriander Soup",
+      "display_order": 7,
+      "is_veg": 1
+    },
+    {
+      "id": 125,
+      "category_id": 12,
+      "name": "Veg Dragon Soup",
+      "display_order": 8,
+      "is_veg": 1
+    },
+    {
+      "id": 126,
+      "category_id": 12,
+      "name": "Flavours Spl. Veg Soup",
+      "display_order": 9,
+      "is_veg": 1
+    },
+    {
+      "id": 127,
+      "category_id": 13,
+      "name": "Chicken Clear Soup",
+      "display_order": 1,
+      "is_veg": 0
+    },
+    {
+      "id": 128,
+      "category_id": 13,
+      "name": "Chicken Corn Soup",
+      "display_order": 2,
+      "is_veg": 0
+    },
+    {
+      "id": 129,
+      "category_id": 13,
+      "name": "Chicken Manchow Soup",
+      "display_order": 3,
+      "is_veg": 0
+    },
+    {
+      "id": 130,
+      "category_id": 13,
+      "name": "Chicken Hot & Sour Soup",
+      "display_order": 4,
+      "is_veg": 0
+    },
+    {
+      "id": 131,
+      "category_id": 13,
+      "name": "Chicken Noodles Soup",
+      "display_order": 5,
+      "is_veg": 0
+    },
+    {
+      "id": 132,
+      "category_id": 13,
+      "name": "Chicken Dragon Soup",
+      "display_order": 6,
+      "is_veg": 0
+    },
+    {
+      "id": 133,
+      "category_id": 13,
+      "name": "Chicken Lemon Coriander Soup",
+      "display_order": 7,
+      "is_veg": 0
+    },
+    {
+      "id": 134,
+      "category_id": 13,
+      "name": "Soup Flavours Spl. Chicken Soup",
+      "display_order": 8,
+      "is_veg": 0
+    },
+    {
+      "id": 135,
+      "category_id": 14,
+      "name": "Gobi-65/Manchurian (Seasonal)",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 136,
+      "category_id": 14,
+      "name": "Veg Manchurian",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 137,
+      "category_id": 14,
+      "name": "Veg - Spring Rolls",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 138,
+      "category_id": 14,
+      "name": "Veg Hongkong",
+      "display_order": 4,
+      "is_veg": 1
+    },
+    {
+      "id": 139,
+      "category_id": 14,
+      "name": "Baby Corn (65/Manchurian/Chilly)",
+      "display_order": 5,
+      "is_veg": 1
+    },
+    {
+      "id": 140,
+      "category_id": 14,
+      "name": "Baby Corn majestic/salt & Pepper",
+      "display_order": 6,
+      "is_veg": 1
+    },
+    {
+      "id": 141,
+      "category_id": 14,
+      "name": "Crispy Baby Corn",
+      "display_order": 7,
+      "is_veg": 1
+    },
+    {
+      "id": 142,
+      "category_id": 14,
+      "name": "Mushroom (65/Manchurian/Chilly)",
+      "display_order": 8,
+      "is_veg": 1
+    },
+    {
+      "id": 143,
+      "category_id": 14,
+      "name": "Mushroom (Salt&Pepper/Schezwan)",
+      "display_order": 9,
+      "is_veg": 1
+    },
+    {
+      "id": 144,
+      "category_id": 14,
+      "name": "Paneer (65/Manchurian/Chilly)",
+      "display_order": 10,
+      "is_veg": 1
+    },
+    {
+      "id": 145,
+      "category_id": 14,
+      "name": "Paneer Majestic",
+      "display_order": 11,
+      "is_veg": 1
+    },
+    {
+      "id": 146,
+      "category_id": 14,
+      "name": "American Corn Fritter",
+      "display_order": 12,
+      "is_veg": 1
+    },
+    {
+      "id": 257,
+      "category_id": 15,
+      "name": "Prawn Salt & Pepper",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 147,
+      "category_id": 15,
+      "name": "Chilly Chicken",
+      "display_order": 1,
+      "is_veg": 0
+    },
+    {
+      "id": 148,
+      "category_id": 15,
+      "name": "Chicken 65",
+      "display_order": 2,
+      "is_veg": 0
+    },
+    {
+      "id": 149,
+      "category_id": 15,
+      "name": "Chicken Manchurian",
+      "display_order": 3,
+      "is_veg": 0
+    },
+    {
+      "id": 150,
+      "category_id": 15,
+      "name": "Chicken Hongkong",
+      "display_order": 4,
+      "is_veg": 0
+    },
+    {
+      "id": 151,
+      "category_id": 15,
+      "name": "Chicken Spring Rolls",
+      "display_order": 5,
+      "is_veg": 0
+    },
+    {
+      "id": 152,
+      "category_id": 15,
+      "name": "Pepper Chicken",
+      "display_order": 6,
+      "is_veg": 0
+    },
+    {
+      "id": 153,
+      "category_id": 15,
+      "name": "Bhutanese Chilly Chicken",
+      "display_order": 7,
+      "is_veg": 0
+    },
+    {
+      "id": 154,
+      "category_id": 15,
+      "name": "Hakka Corn Chicken",
+      "display_order": 8,
+      "is_veg": 0
+    },
+    {
+      "id": 155,
+      "category_id": 15,
+      "name": "Ginger Chicken/Garlic Chicken",
+      "display_order": 9,
+      "is_veg": 0
+    },
+    {
+      "id": 156,
+      "category_id": 15,
+      "name": "Schezwan Chicken",
+      "display_order": 10,
+      "is_veg": 0
+    },
+    {
+      "id": 157,
+      "category_id": 15,
+      "name": "Lemon Chicken",
+      "display_order": 11,
+      "is_veg": 0
+    },
+    {
+      "id": 158,
+      "category_id": 15,
+      "name": "Green Land Chicken",
+      "display_order": 12,
+      "is_veg": 0
+    },
+    {
+      "id": 159,
+      "category_id": 15,
+      "name": "Spicy Fried Chicken",
+      "display_order": 13,
+      "is_veg": 0
+    },
+    {
+      "id": 160,
+      "category_id": 15,
+      "name": "Chicken 555",
+      "display_order": 14,
+      "is_veg": 0
+    },
+    {
+      "id": 161,
+      "category_id": 15,
+      "name": "Sesame Chicken",
+      "display_order": 15,
+      "is_veg": 0
+    },
+    {
+      "id": 162,
+      "category_id": 15,
+      "name": "Popcorn Chicken",
+      "display_order": 16,
+      "is_veg": 0
+    },
+    {
+      "id": 163,
+      "category_id": 15,
+      "name": "Red Chilli Fried Chicken",
+      "display_order": 17,
+      "is_veg": 0
+    },
+    {
+      "id": 164,
+      "category_id": 15,
+      "name": "Butter Chilly Chicken",
+      "display_order": 18,
+      "is_veg": 0
+    },
+    {
+      "id": 165,
+      "category_id": 15,
+      "name": "Crispy Thade Chicken",
+      "display_order": 19,
+      "is_veg": 0
+    },
+    {
+      "id": 166,
+      "category_id": 15,
+      "name": "8 to 8 Chicken",
+      "display_order": 20,
+      "is_veg": 0
+    },
+    {
+      "id": 167,
+      "category_id": 15,
+      "name": "Golden Dragon Chicken",
+      "display_order": 21,
+      "is_veg": 0
+    },
+    {
+      "id": 168,
+      "category_id": 15,
+      "name": "Chicken Gulzara",
+      "display_order": 22,
+      "is_veg": 0
+    },
+    {
+      "id": 169,
+      "category_id": 15,
+      "name": "Loose Chicken/Creamy Chicken",
+      "display_order": 23,
+      "is_veg": 0
+    },
+    {
+      "id": 170,
+      "category_id": 15,
+      "name": "Cashew Nut Chicken",
+      "display_order": 24,
+      "is_veg": 0
+    },
+    {
+      "id": 171,
+      "category_id": 15,
+      "name": "Mint Chicken",
+      "display_order": 25,
+      "is_veg": 0
+    },
+    {
+      "id": 172,
+      "category_id": 15,
+      "name": "Chilly Wings/Chicken Wings",
+      "display_order": 26,
+      "is_veg": 0
+    },
+    {
+      "id": 173,
+      "category_id": 15,
+      "name": "Chicken fried Wings",
+      "display_order": 27,
+      "is_veg": 0
+    },
+    {
+      "id": 174,
+      "category_id": 15,
+      "name": "Chicken Majestic/Schezwan",
+      "display_order": 28,
+      "is_veg": 0
+    },
+    {
+      "id": 175,
+      "category_id": 15,
+      "name": "Chicken Lollipop",
+      "display_order": 29,
+      "is_veg": 0
+    },
+    {
+      "id": 176,
+      "category_id": 15,
+      "name": "Chef Spl Chicken",
+      "display_order": 30,
+      "is_veg": 0
+    },
+    {
+      "id": 177,
+      "category_id": 15,
+      "name": "Apollo Fish",
+      "display_order": 31,
+      "is_veg": 0
+    },
+    {
+      "id": 178,
+      "category_id": 15,
+      "name": "Ginger Fish",
+      "display_order": 32,
+      "is_veg": 0
+    },
+    {
+      "id": 179,
+      "category_id": 15,
+      "name": "Chilly Fish/Schezwan Fish",
+      "display_order": 33,
+      "is_veg": 0
+    },
+    {
+      "id": 180,
+      "category_id": 15,
+      "name": "Hakka Fish/Garlic Fish",
+      "display_order": 34,
+      "is_veg": 0
+    },
+    {
+      "id": 181,
+      "category_id": 15,
+      "name": "Fish Manchurian",
+      "display_order": 35,
+      "is_veg": 0
+    },
+    {
+      "id": 182,
+      "category_id": 15,
+      "name": "Pepper Fish",
+      "display_order": 36,
+      "is_veg": 0
+    },
+    {
+      "id": 183,
+      "category_id": 15,
+      "name": "Prawn Manchurian",
+      "display_order": 37,
+      "is_veg": 0
+    },
+    {
+      "id": 184,
+      "category_id": 15,
+      "name": "Chilly Prawns",
+      "display_order": 38,
+      "is_veg": 0
+    },
+    {
+      "id": 185,
+      "category_id": 15,
+      "name": "Loose Prawns",
+      "display_order": 39,
+      "is_veg": 0
+    },
+    {
+      "id": 186,
+      "category_id": 16,
+      "name": "Chicken Curry (Bone)",
+      "display_order": 1,
+      "is_veg": 0
+    },
+    {
+      "id": 187,
+      "category_id": 16,
+      "name": "Chicken Fry (Bone)",
+      "display_order": 2,
+      "is_veg": 0
+    },
+    {
+      "id": 188,
+      "category_id": 16,
+      "name": "Gongura Chicken Bone",
+      "display_order": 3,
+      "is_veg": 0
+    },
+    {
+      "id": 189,
+      "category_id": 16,
+      "name": "Gongura Chicken Boneless",
+      "display_order": 4,
+      "is_veg": 0
+    },
+    {
+      "id": 190,
+      "category_id": 16,
+      "name": "Gongura Mutton Curry",
+      "display_order": 5,
+      "is_veg": 0
+    },
+    {
+      "id": 191,
+      "category_id": 16,
+      "name": "Gongura Prawns Curry",
+      "display_order": 6,
+      "is_veg": 0
+    },
+    {
+      "id": 192,
+      "category_id": 17,
+      "name": "Onion Salad (Small)",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 193,
+      "category_id": 17,
+      "name": "Onion Salad (Large)",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 194,
+      "category_id": 17,
+      "name": "Tomato Salad",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 195,
+      "category_id": 18,
+      "name": "Onion Raita",
+      "display_order": 1,
+      "is_veg": 1
+    },
+    {
+      "id": 196,
+      "category_id": 18,
+      "name": "Curd (Small)",
+      "display_order": 2,
+      "is_veg": 1
+    },
+    {
+      "id": 197,
+      "category_id": 18,
+      "name": "Curd (Big)",
+      "display_order": 3,
+      "is_veg": 1
+    },
+    {
+      "id": 242,
+      "category_id": 24,
+      "name": "Veg Soft Noodles",
+      "display_order": 0,
+      "is_veg": 1
+    },
+    {
+      "id": 244,
+      "category_id": 25,
+      "name": "Prawn Fried Rice",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 243,
+      "category_id": 25,
+      "name": "Spl / Mutton Fried Rice",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 245,
+      "category_id": 25,
+      "name": "Spl Prawn Fried Rice",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 249,
+      "category_id": 26,
+      "name": "Baby Corn Manchurian Wet",
+      "display_order": 0,
+      "is_veg": 1
+    },
+    {
+      "id": 247,
+      "category_id": 26,
+      "name": "Chilly Mushroom Wet",
+      "display_order": 0,
+      "is_veg": 1
+    },
+    {
+      "id": 248,
+      "category_id": 26,
+      "name": "Paneer Manchurian Wet",
+      "display_order": 0,
+      "is_veg": 1
+    },
+    {
+      "id": 246,
+      "category_id": 26,
+      "name": "Veg Manchurian Wet",
+      "display_order": 0,
+      "is_veg": 1
+    },
+    {
+      "id": 252,
+      "category_id": 27,
+      "name": "Chicken Chilly Wet",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 250,
+      "category_id": 27,
+      "name": "Chicken in Ginger Wet",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 251,
+      "category_id": 27,
+      "name": "Chicken Manchurian Wet",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 253,
+      "category_id": 27,
+      "name": "Chicken Schezwan Wet",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 254,
+      "category_id": 27,
+      "name": "Fish in Chilly Wet",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 255,
+      "category_id": 27,
+      "name": "Prawns in Chilly Wet",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 256,
+      "category_id": 27,
+      "name": "Prawns Manchurian Wet",
+      "display_order": 0,
+      "is_veg": 0
+    },
+    {
+      "id": 259,
+      "category_id": 28,
+      "name": "Sambar Rice",
+      "display_order": 0,
+      "is_veg": 1
+    },
+    {
+      "id": 258,
+      "category_id": 28,
+      "name": "Veg Thali",
+      "display_order": 0,
+      "is_veg": 1
+    }
+  ]
+}
